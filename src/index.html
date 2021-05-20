@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Boxicons CSS -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/icofont.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <!-- Project CSS -->
+  <link rel="stylesheet" href="/src/style/index.css?v=1.0.0">
+
+  <title>Portifólio</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content-left">
+      <header id="header">
+        <div class="profile">
+          <img src="/imagens/foto-perfil-camera.jpg" alt="">
+          <h1>Davi Feitosa</h1>
+    
+          <div class="social-links mt-3 text-center">
+            <a href="#" class="link"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="link"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="link"><i class="bx bxl-github"></i></a>
+            <a href="#" class="link"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+    
+    
+        <nav class="nav-menu"><!-- Starts nav-menu -->
+          <a href="#hero">
+            <i class="bx bx-home"></i>
+            Home
+          </a>
+          <a href="#about">
+            <i class='bx bx-user'></i>
+            Sobre mim
+          </a>
+          <a href="#curriculo">
+            <i class='bx bx-file-blank' ></i>
+            Currículo
+          </a>
+          <a href="#portifolio">
+            <i class='bx bx-grid-alt' ></i>
+            Portifólio
+          </a>
+          <a href="#servicos">
+            <i class='bx bx-cog' ></i>
+            Serviços
+          </a>
+          <a href="#contato">
+            <i class='bx bx-mail-send' ></i>
+            Entre em contato
+          </a>
+        </nav> <!-- Ends nav-menu -->
+      </header>
+    </div>
+      
+    <div class="content-right">
+      <div id="toggler" onclick="toogleNav.call(this)">&#9776;</div>
+      <section id="hero">
+        <!-- ======= Hero Section ======= -->
+        <div class="hero-container">
+          <h1>Davi Feitosa</h1>
+          <p>Eu sou
+            <span class="typed" data-items="Desenvolvedor, Designer, Estudante"></span>
+            <span class="hero-pointer">i</span>
+          </p>
+        </div>
+      </section>
+    
+      <main id="main">
+        <section id="about">
+          <h2 class="title">Sobre mim</h2>
+
+          <p class="paragraph-text">Olá! Meu nome é Davi, sou um assíduo estudante de Tecnologia da Informação, 
+            hoje o meu o maior foco é a área de Desenvolvimento Web. Prezo sempre pela excelência e qualidade 
+            dos meus projetos, usando as melhores arquiteturas e padrões no intuito de obter o melhor resultado, 
+            de forma a agradar os meus clientes.</p>
+
+          <div class="about-content">
+            <div class="about-content-img">
+              <img src="/imagens/foto-perfil-camera.jpg" alt="">
+            </div>
+
+            <div class="about-content-desc">
+              <h3>Desenvolvedor Web</h1>
+
+                <p class="paragraph-text">Estou em busca de novos projetos para aprimorar o meu portifólio e 
+                  elevar a minha experiência e qualidade como desenvolvedor </p>
+
+                <ul class="about-ul">
+                  <div class="li-left">
+                    <li><strong>Nascimento:</strong> 28/01/2003</li>
+                    <li><strong>Website: </strong>davifeitosa.com</li>
+                    <li><strong>Telefone: </strong> +55 (61) 99425-2280 </li>
+                    <li><strong>Cidade: </strong>Santa Maria, Brasília - DF</li>
+                  </div>
+                  <div class="li-right">
+                    <li><strong>Idade: </strong> 18</li>
+                    <li><strong>Email:</strong> davifeitosa.dev@protonmail.com</li>
+                    <li><strong>Freelance:</strong> <span style="color: green;">Disponível</span></li>
+                  </div>
+                </ul>
+
+            </div>
+          </div>
+
+          <div id="skills" class="skills">
+            <h2 class="title">Habilidades</h2>
+            <p class="paragraph-text">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. 
+              Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+
+            <div class="skills-body">
+              <div class="left-skills">
+                <div class="skill">
+                  <div class="skill-desc">
+                    <p class="skill-text">Node</p>
+                    <p class="skill-text" data-percent="70"></p>
+                  </div>
+                  <div class="background-percent-bar">
+                    <div class="percent-bar"></div>
+                  </div>
+                </div>
+    
+                <div class="skill">
+                  <div class="skill-desc">
+                    <p class="skill-text">React</p>
+                    <p class="skill-text" data-percent="50"></p>
+                  </div>
+                  <div class="background-percent-bar">
+                    <div class="percent-bar"></div>
+                  </div>
+                </div>
+    
+                <div class="skill">
+                  <div class="skill-desc">
+                    <p class="skill-text">Typescript</p>
+                    <p class="skill-text" data-percent="80"></p>
+                  </div>
+                  <div class="background-percent-bar">
+                    <div class="percent-bar"></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-desc">
+                    <p class="skill-text">Java</p>
+                    <p class="skill-text" data-percent="60"></p>
+                  </div>
+                  <div class="background-percent-bar">
+                    <div class="percent-bar"></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-desc">
+                    <p class="skill-text">MySQL</p>
+                    <p class="skill-text" data-percent="80"></p>
+                  </div>
+                  <div class="background-percent-bar">
+                    <div class="percent-bar"></div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="right-skills">
+                <div class="skill">
+                  <div class="skill-desc">
+                    <p class="skill-text">HTML</p>
+                    <p class="skill-text" data-percent="90"></p>
+                  </div>
+                  <div class="background-percent-bar">
+                    <div class="percent-bar"></div>
+                  </div>
+                </div>
+    
+                <div class="skill">
+                  <div class="skill-desc">
+                    <p class="skill-text">CSS</p>
+                    <p class="skill-text" data-percent="70"></p>
+                  </div>
+                  <div class="background-percent-bar">
+                    <div class="percent-bar"></div>
+                  </div>
+                </div>
+    
+                <div class="skill">
+                  <div class="skill-desc">
+                    <p class="skill-text">Javascript</p>
+                    <p class="skill-text" data-percent="80"></p>
+                  </div>
+                  <div class="background-percent-bar">
+                    <div class="percent-bar"></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-desc">
+                    <p class="skill-text">PHP</p>
+                    <p class="skill-text" data-percent="40"></p>
+                  </div>
+                  <div class="background-percent-bar">
+                    <div class="percent-bar"></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-desc">
+                    <p class="skill-text">MongoDB</p>
+                    <p class="skill-text" id="percent" data-percent="65"></p>
+                  </div>
+                  <div class="background-percent-bar">
+                    <div class="percent-bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+      </main>
+    </div>
+
+  </div>
+
+  <script>
+    let sidenav = document.getElementById('header');
+    let toggler = document.getElementById('toggler');
+    let open;
+    addEventListener('resize', () => {
+      if (window.innerWidth >= 950) {
+        sidenav.style.left = "0";
+        document.getElementsByClassName('nav-menu')[0].style.marginLeft = ".5rem";
+
+      } else if (window.innerWidth <= 950) {
+        sidenav.style.left = "-18rem";
+        toggler.innerHTML = "&#9776;"
+        open = false;
+      }   
+    })
+
+    function toogleNav() {
+      if (!open) { // se tiver fechado, vai abrir
+        sidenav.style.left = "0";
+        this.innerHTML = "&times;"
+      } else { // se tiver aberto, vai fechar
+        sidenav.style.left = "-18rem";
+        this.innerHTML = "&#9776;"
+      }
+      open = !open;
+    }
+
+    function sleep (ms) {
+      return new Promise(resolve => setTimeout(resolve, ms))
+    }
+
+    async function sumWidth(skill) {
+      let percent = skill.childNodes[1].childNodes[3].getAttribute('data-percent');
+      console.log(percent);
+      
+      let percentBar = skill.childNodes[3].childNodes[1];
+      let percentCounter = skill.childNodes[1].childNodes[3];
+      let count = 0, width;
+      for (let i = 0; i < percent; i++) {
+        width = Number(percentBar.style.width.replace('%', '')) + 1;
+        percentBar.style.width = width + '%';
+        
+        count++;
+        percentCounter.innerText = count + '%'
+
+        await sleep(40);
+      }
+    }
+
+    let foo = document.getElementById('skills');
+    let alreadyLoaded = false;
+    window.addEventListener('scroll', () => {
+      if (((foo.offsetTop - window.scrollY) - (foo.offsetHeight * 0.3 + foo.offsetHeight)) <= 0) {
+        if (!alreadyLoaded) {
+          alreadyLoaded = true;
+          let skills = document.querySelectorAll('.skill');
+          for (skill of skills) {
+            sumWidth(skill)
+          }
+        }
+      }
+    })
+
+  </script>
+
+  <script src="/src/scripts/hero.js"></script> 
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

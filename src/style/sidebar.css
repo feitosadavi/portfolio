@@ -1,0 +1,93 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  transition: .5s;
+}
+
+.profile img {
+  border-radius: 100%;
+  border: .5rem solid var(--secondary-menu-color);
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.profile h1 {
+  font-family: var(--profile-font);
+  color: #ffff;
+  font-size: 18pt;
+  margin-top: .7rem;
+}
+
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background-color: var(--secondary-menu-color);
+  color: #ffff;
+  line-height: 1;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  padding: 8px 0;
+
+}
+
+#header .nav-menu {
+  margin-top: 2rem;
+  transition: .5s;
+}
+
+#header .nav-menu a {
+  display: flex;
+  align-items: center;
+  font-size: 13pt;
+  margin-left: .5rem;
+  padding: 1rem 1rem 1rem 1.2rem;
+  text-decoration: none;
+  color: #a8a9b4;
+  transition: 0.3s;
+}
+
+#header .nav-menu i {
+  margin-right: .5rem;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+#header .nav-menu a:hover i {
+  color: var(--secondary-color);
+}
+
+#header .nav-menu a:hover {
+  color: #f1f1f1;
+}
+
+#toggler {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  #header {padding-top: 3rem;}
+
+  #toggler {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right:15px;
+    top:15px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+    cursor:pointer;
+    z-index: 9999;
+    padding: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
