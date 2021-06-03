@@ -93,7 +93,8 @@
             <div class="about-content-desc">
               <h3>Desenvolvedor Web</h1>
 
-                <p class="paragraph-text">Estou em busca de novos projetos para aprimorar o meu portifólio e 
+                <p class="paragraph-text">Estudo desenvolvimento web há pouco menos de 1 ano e estou em busca de novos projetos e desafios
+                   para aprimorar o meu portifólio e 
                   elevar a minha experiência e qualidade como desenvolvedor </p>
 
                 <ul class="about-ul">
@@ -115,13 +116,15 @@
 
           <div id="skills" class="skills">
             <h2 class="title">Habilidades</h2>
-            <p class="paragraph-text">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. 
-              Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p class="paragraph-text">
+              A minha principal stack é a de Javascript. Mas sou bastante flexível, posso atuar com outras
+              tecnologias que forem solicitadas à mim. Estou sempre estudando e procurando dominar cada vez mais conceitos
+              e tecnologias necessárias para esta área.
+            </p>
 
 
             <div class="skills-body">
-              <div class="left-skills">
+              <div class="skills-left">
                 <div class="skill">
                   <div class="skill-desc">
                     <p class="skill-text">Node</p>
@@ -151,7 +154,7 @@
                     <div class="percent-bar"></div>
                   </div>
                 </div>
-
+  
                 <div class="skill">
                   <div class="skill-desc">
                     <p class="skill-text">Java</p>
@@ -161,7 +164,7 @@
                     <div class="percent-bar"></div>
                   </div>
                 </div>
-
+                
                 <div class="skill">
                   <div class="skill-desc">
                     <p class="skill-text">MySQL</p>
@@ -172,8 +175,9 @@
                   </div>
                 </div>
               </div>
+
+              <div class="skills-right">
   
-              <div class="right-skills">
                 <div class="skill">
                   <div class="skill-desc">
                     <p class="skill-text">HTML</p>
@@ -197,13 +201,13 @@
                 <div class="skill">
                   <div class="skill-desc">
                     <p class="skill-text">Javascript</p>
-                    <p class="skill-text" data-percent="80"></p>
+                    <p class="skill-text" data-percent="90"></p>
                   </div>
                   <div class="background-percent-bar">
                     <div class="percent-bar"></div>
                   </div>
                 </div>
-
+  
                 <div class="skill">
                   <div class="skill-desc">
                     <p class="skill-text">PHP</p>
@@ -213,7 +217,7 @@
                     <div class="percent-bar"></div>
                   </div>
                 </div>
-
+  
                 <div class="skill">
                   <div class="skill-desc">
                     <p class="skill-text">MongoDB</p>
@@ -223,7 +227,9 @@
                     <div class="percent-bar"></div>
                   </div>
                 </div>
+
               </div>
+              
             </div>
 
           </div>
@@ -244,7 +250,7 @@
         document.getElementsByClassName('nav-menu')[0].style.marginLeft = ".5rem";
 
       } else if (window.innerWidth <= 950) {
-        sidenav.style.left = "-18rem";
+        sidenav.style.left = "-26rem";
         toggler.innerHTML = "&#9776;"
         open = false;
       }   
@@ -255,7 +261,7 @@
         sidenav.style.left = "0";
         this.innerHTML = "&times;"
       } else { // se tiver aberto, vai fechar
-        sidenav.style.left = "-18rem";
+        sidenav.style.left = "-26rem";
         this.innerHTML = "&#9776;"
       }
       open = !open;

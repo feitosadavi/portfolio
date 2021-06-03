@@ -57,26 +57,12 @@ h1 {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 25% 75%;
 }
 
 section {
   padding: 60px 0;
   overflow: hidden;
-}
-
-/* // Header // */
-#header {
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 18rem;
-  transition: .7s;
-  background: var(--main-color);
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 
@@ -147,7 +133,58 @@ section {
   to {opacity: .7;}
 }
 
+/* //Skills// */
+.background-percent-bar {
+  background-color: #9CA6B4;
+  width: 100%;
+}
+
+.percent-bar {
+  width: 0;
+  height: .7rem;
+  background-color: var(--secondary-color);
+}
+
+.skills-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.skills-right {
+  width: 40%;
+}
+
+.skills-left {
+  width: 40%;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.skill-desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-text {
+  color: #040b14;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 950px) {
+  li {
+    font-size: 21pt;
+  }
+  .title {
+    font-size: 36pt;
+  }
+  .paragraph-text {
+    font-size: 22pt;
+  }
   #header {
     left: -18rem;
   }
@@ -160,6 +197,19 @@ section {
   }
   .wrapper {
     display: flex;
+  }
+  .skills-body {
+    flex-direction: column;
+  }
+  .skill-text {
+    font-size: 24pt;
+  }
+  .skills-right {
+    width: 100%;
+  }
+  
+  .skills-left {
+    width: 100%;
   }
 }
 
@@ -245,49 +295,4 @@ section {
   #about .about-ul {
     display: block;
   }
-}
-
-/* //Skills// */
-.background-percent-bar {
-  background-color: #9CA6B4;
-  width: 30rem;
-}
-
-.percent-bar {
-  width: 0;
-  height: .7rem;
-  background-color: var(--secondary-color);
-}
-
-.skill {
-  margin-bottom: 1rem;
-}
-
-.skill-desc {
-  display: flex;
-}
-
-.skill-text {
-  color: #040b14;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-.skill-text:nth-child(1) {
-  margin-right: auto;
-}
-
-.skill-text:nth-child(2) {
-  margin-left: auto;
-}
-
-.skills-body {
-  display: grid;
-  display: flex;
-  grid-template-columns: 30rem 30rem;
-  gap: 10%;
-}
-
-.right-skills {
-  align-self: end;
 }

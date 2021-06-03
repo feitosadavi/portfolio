@@ -1,3 +1,31 @@
+/* // Header // */
+#header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  transition: .5s;
+  background: var(--main-color);
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background-color: var(--secondary-menu-color);
+  color: #ffff;
+  line-height: 1;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  padding: 8px 0;
+
+}
 .profile {
   display: flex;
   flex-direction: column;
@@ -21,20 +49,6 @@
   margin-top: .7rem;
 }
 
-#header .profile .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background-color: var(--secondary-menu-color);
-  color: #ffff;
-  line-height: 1;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  padding: 8px 0;
-
-}
 
 #header .nav-menu {
   margin-top: 2rem;
@@ -49,13 +63,11 @@
   padding: 1rem 1rem 1rem 1.2rem;
   text-decoration: none;
   color: #a8a9b4;
-  transition: 0.3s;
 }
 
 #header .nav-menu i {
   margin-right: .5rem;
   font-size: 1.3rem;
-  transition: 0.3s;
 }
 
 #header .nav-menu a:hover i {
@@ -71,15 +83,46 @@
 }
 
 @media screen and (max-width: 950px) {
-  #header {padding-top: 3rem;}
+  .profile img {
+    border-radius: 100%;
+    border: .5rem solid var(--secondary-menu-color);
+    width: 9rem;
+    height: 9rem;
+  }
+  
+  .profile h1 {
+    font-size: 24pt;
+    font-weight: bolder;
+    margin-top: 1rem;
+  }
+
+  #header {
+    padding-top: 3rem;
+    width: 26rem;
+  }
+
+  #header .nav-menu a {
+    font-size: 20pt;
+  }
+
+  #header .nav-menu i {
+    margin-left: .8rem;
+    font-size: 2rem;
+  }
+
+  #header .profile .social-links a {
+    font-size: 24pt;
+    width: 3rem;
+    height: 3rem;  
+  }
 
   #toggler {
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    right:15px;
-    top:15px;
+    right:1.5rem;
+    top:1.5rem;
     font-size: 1.5rem;
     border-radius: 100%;
     background-color: var(--secondary-color);
@@ -87,7 +130,7 @@
     cursor:pointer;
     z-index: 9999;
     padding: 1.2rem;
-    width: 2rem;
-    height: 2rem;
+    width: 3.3rem;
+    height: 3.3rem;
   }
 }
