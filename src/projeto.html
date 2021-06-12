@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Index style -->
+  <link rel="stylesheet" href="/src/style/index.css">
+  <!-- Project style -->
+  <link rel="stylesheet" href="/src/style/project.css">
+  <!-- Sidenav style -->
+  <link rel="stylesheet" href="/src/style/sidebar.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+
+  <!-- Icons -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/icofont.min.css">
+
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <div class="content-left">
+      <!-- ===== Navigation Menu ===== -->
+      <header id="header">
+        <div class="profile">
+          <img src="/imagens/foto-perfil-camera.jpg" alt="">
+          <h1>Davi Feitosa</h1>
+          
+          <div class="social-links mt-3 text-center">
+            <a href="#" class="link"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="link"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="link"><i class="bx bxl-github"></i></a>
+            <a href="#" class="link"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+        
+        
+        <nav class="nav-menu"><!-- Starts nav-menu -->
+          <a href="#hero">
+            <i class="bx bx-home"></i>
+            Home
+          </a>
+          <a href="#about">
+            <i class='bx bx-user'></i>
+            Sobre mim
+          </a>
+          <a href="#curriculo">
+            <i class='bx bx-file-blank' ></i>
+            Currículo
+          </a>
+          <a href="#portfolio">
+            <i class='bx bx-grid-alt' ></i>
+            Portifólio
+          </a>
+          <a href="#servicos">
+            <i class='bx bx-cog' ></i>
+            Serviços
+          </a>
+          <a href="#contato">
+            <i class='bx bx-mail-send' ></i>
+            Entre em contato
+          </a>
+        </nav> <!-- Ends nav-menu -->
+      </header>
+    </div>
+    
+    <div class="content-right">
+      <!-- ===== Mobile button ===== -->
+      <div id="toggler" onclick="toogleNav.call(this)">&#9776;</div>
+      <!-- ===== Main content ===== -->
+      <div class="top-bar">
+        <h3>Detalhes do Projeto</h3>
+
+        <nav class="projeto-nav">
+          <a href="/index.html#portfolio">Home</a>
+          /
+          <a href="/src/projeto.html">Detalhes do Portifólio</a>
+        </nav>
+      </div>
+      <main class="container">
+
+        <div id="carousel" class="carousel">
+
+        </div>
+
+        <aside>
+          <div class="project-information">
+            <h3 id="project-information-title"></h3>
+            <hr>
+            <ul id="project-information-list">
+
+            </ul>
+          </div>
+
+          <div class="project-details">
+            <!-- <h1 id="project-details-title">Detalhes do Projeto</h1> -->
+
+            <p id="project-details-text" ></p>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+
+  </div>
+
+  <script>
+    let projects = JSON.parse(localStorage.getItem('projects'));
+
+    let urlParams = new URLSearchParams(window.location.search);
+    let projectLink  = urlParams.get('projeto');
+
+    let project;
+    for(_project of projects) {
+      if (_project.link === projectLink) {
+        project = _project;
+      }
+    };
+
+    document.title = `Davi | ${project.name}`;
+    document.getElementById('project-information-title').innerText = project.name;
+    
+    let projectInformationList = document.getElementById('project-information-list');
+    console.log(project);
+    let informations = ['type', 'tools', 'status'];
+    for (const information of informations) {
+      let title;
+
+      switch (information) {
+        case 'type':
+          title = 'Stack';
+          break;
+        case 'tools':
+          title = 'Tecnologias';
+          break;
+        case 'status':
+          title = 'Status'
+          break;
+        default:
+          null
+      }
+
+
+      let li = document.createElement('li');
+      let b = document.createElement('b');
+      b.innerText = title + ': '; 
+      li.innerText = project[information];
+
+      li.prepend(b);
+      projectInformationList.append(li);
+    }
+
+    let bGit = document.createElement('b');
+    bGit.innerText = 'Github: '
+    let aGit = document.createElement('a');
+    aGit.innerText = project.github;
+    aGit.href = project.github;
+    let liGit = document.createElement('li');
+    liGit.append(bGit);
+    liGit.append(aGit);
+    projectInformationList.append(liGit);
+
+    document.getElementById('project-details-text').innerText = project.description;
+    
+    let img = document.createElement('img');
+    img.src = `/imagens/${project.thumb}`;
+    img.alt = 'Thumbnail do projeto ' + project.name;
+    document.getElementById('carousel').append(img);
+  </script>
+
+  <script src="/src/scripts/sidenav.js"></script> 
+
+</body>
+</html>

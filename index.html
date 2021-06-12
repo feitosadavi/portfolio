@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
    <!-- Boxicons CSS -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="/icofont.min.css">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
   <!-- Project CSS -->
   <link rel="stylesheet" href="/src/style/index.css?v=1.0.0">
   
-  <title>Portifólio</title>
+  <title>Davi Feitosa</title>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
             <i class='bx bx-file-blank' ></i>
             Currículo
           </a>
-          <a href="#portifolio">
+          <a href="#portfolio">
             <i class='bx bx-grid-alt' ></i>
             Portifólio
           </a>
@@ -77,6 +77,7 @@
       </section>
     
       <main id="main">
+        ATENÇÃO: Este site ainda não foi concluído!
         <section id="about">
           <h2 class="title">Sobre mim</h2>
 
@@ -235,38 +236,37 @@
           </div>
 
         </section>
+
+        <section id="portfolio">
+          <h2 class="title">Portifólio</h2>
+
+          <p class="paragraph-text">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. 
+            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. 
+            Quia fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+
+          <nav>
+            <ul id="filter-list" class="filter-list">
+              <li data-filter="todos"><a href="#portfolio">TODOS</a></li>
+              <li data-filter="frontend"><a href="#portfolio">FRONTEND</a></li>
+              <li data-filter="backend"><a href="#portfolio">BACKEND</a></li>
+            </ul>
+          </nav>
+
+          <hr>
+
+          <div id="portfolio-wrapper" class="portfolio-wrapper">
+
+          </div>
+        </section>
+
       </main>
     </div>
 
   </div>
 
   <script>
-    let sidenav = document.getElementById('header');
-    let toggler = document.getElementById('toggler');
-    let open;
-    addEventListener('resize', () => {
-      if (window.innerWidth >= 950) {
-        sidenav.style.left = "0";
-        document.getElementsByClassName('nav-menu')[0].style.marginLeft = ".5rem";
-
-      } else if (window.innerWidth <= 950) {
-        sidenav.style.left = "-26rem";
-        toggler.innerHTML = "&#9776;"
-        open = false;
-      }   
-    })
-
-    function toogleNav() {
-      if (!open) { // se tiver fechado, vai abrir
-        sidenav.style.left = "0";
-        this.innerHTML = "&times;"
-      } else { // se tiver aberto, vai fechar
-        sidenav.style.left = "-26rem";
-        this.innerHTML = "&#9776;"
-      }
-      open = !open;
-    }
-
     function sleep (ms) {
       return new Promise(resolve => setTimeout(resolve, ms))
     }
@@ -305,7 +305,9 @@
 
   </script>
 
-  <!-- <script src="/src/scripts/hero.js"></script>  -->
+  <script src="/src/scripts/sidenav.js"></script> 
+  <script src="/src/scripts/hero.js"></script> 
+  <script src="/src/scripts/projetos.js"></script> 
   <script src="/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

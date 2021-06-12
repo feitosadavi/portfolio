@@ -1,0 +1,60 @@
+.container {
+  margin: 3rem auto .5rem;
+  
+  display: flex;
+  gap: 1rem;
+}
+
+.top-bar {
+  padding: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar h3 {
+  color: #272829;
+  font-family: var(--h3-font);
+  font-weight: 200;
+}
+
+.carousel {
+  flex: 3;
+  height: 25rem;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+}
+
+aside {
+  flex: 2;
+}
+
+.project-information hr{
+  background-color: rgb(141, 136, 136);
+}
+
+.project-information {
+  padding: 1rem;
+  box-shadow: -7px 5px 10px #cecaca;
+}
+
+.project-information ul {
+  list-style: none;
+}
+
+.project-information li {
+  padding-top: .4rem ;
+  padding-bottom: .4rem ;
+  word-break: break-all;
+}
+
+#project-details-text {
+  margin-top: 2rem;
+
+  color: #272829;
+  font-weight: 600;
+}

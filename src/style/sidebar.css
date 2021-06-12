@@ -6,7 +6,7 @@
   left: 0;
   bottom: 0;
   width: 25%;
-  transition: .5s;
+  transition: .8s;
   background: var(--main-color);
   overflow-y: hidden;
   overflow-x: hidden;
@@ -83,31 +83,36 @@
 }
 
 @media screen and (max-width: 950px) {
+  .social-links a i {
+    padding: 0rem;
+    font-size: 18pt;
+  }
   .profile img {
     border-radius: 100%;
     border: .5rem solid var(--secondary-menu-color);
-    width: 9rem;
-    height: 9rem;
+    width: 8rem;
+    height: 8rem;
   }
   
   .profile h1 {
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: bolder;
     margin-top: 1rem;
   }
 
   #header {
-    padding-top: 3rem;
-    width: 26rem;
+    padding-top: 1rem;
+    width: 18rem;
+    left: -18rem;
   }
 
   #header .nav-menu a {
-    font-size: 20pt;
+    font-size: 14pt;
   }
 
   #header .nav-menu i {
     margin-left: .8rem;
-    font-size: 2rem;
+    font-size: 16pt;
   }
 
   #header .profile .social-links a {
@@ -121,8 +126,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    right:1.5rem;
-    top:1.5rem;
+    right:.8rem;
+    top:1.3rem;
     font-size: 1.5rem;
     border-radius: 100%;
     background-color: var(--secondary-color);
@@ -130,7 +135,7 @@
     cursor:pointer;
     z-index: 9999;
     padding: 1.2rem;
-    width: 3.3rem;
-    height: 3.3rem;
+    width: 3rem;
+    height: 3rem;
   }
 }
