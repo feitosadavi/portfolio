@@ -57,11 +57,11 @@ window.addEventListener('load', () => {
     div.className = 'project';
     div.setAttribute('data-type', project.type);
     div.onclick = () => {
-      location.href = `/src/projeto.html?projeto=${project.link}`
+      location.href = `/portfolio/src/projeto.html?projeto=${project.link}`
     }
 
     let img = document.createElement('img');
-    img.src = `/imagens/${project.thumb}`
+    img.src = `/portfolio/imagens/${project.thumb}`
 
     div.append(img);
     portifolioWrapper.append(div);
