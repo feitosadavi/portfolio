@@ -164,6 +164,18 @@
     liGit.append(aGit);
     projectInformationList.append(liGit);
 
+    if (project.url) {
+      let bUrl = document.createElement('b');
+      bUrl.innerText = 'Link: '
+      let aUrl = document.createElement('a');
+      aUrl.innerText = project.url;
+      aUrl.href = project.url;
+      let liUrl = document.createElement('li');
+      liUrl.append(bUrl);
+      liUrl.append(aUrl);
+      projectInformationList.append(liUrl);
+    }
+
     document.getElementById('project-details-text').innerText = project.description;
     
     let img = document.createElement('img');
