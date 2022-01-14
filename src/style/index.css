@@ -254,7 +254,9 @@ section {
   -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 */
 
-#portfolio {}
+#portfolio {
+
+}
 
 .filter-list {
   display: flex;
@@ -283,6 +285,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #f0f0f0;
 }
 
 .portfolio-wrapper .project {

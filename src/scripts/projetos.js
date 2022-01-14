@@ -46,7 +46,7 @@ const projects = [
   {
     name: 'Captacao',
     status: 'Em progresso...',
-    thumb: 'captacao.png',
+    thumb: 'captacao.jpeg',
     description:
       'Uma aplicação para a captação de carros para concessionárias e compra e venda para usuários. Este projeto foi desenvolvido utilizando boas práticas de código, TDD e Arquitetura Limpa. Para mais informações, entre em contato :)',
     type: 'backend e frontend',
