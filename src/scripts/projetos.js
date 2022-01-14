@@ -35,6 +35,7 @@ const projects = [
   },
   {
     name: 'Musicapi',
+    link: 'musicapi',
     status: 'Concluído :)',
     thumb: 'musicapi.png',
     description:
@@ -44,7 +45,8 @@ const projects = [
     github: 'https://github.com/feitosadavi/musicapi',
   },
   {
-    name: 'Captacao',
+    name: 'Captação',
+    link: 'captacao',
     status: 'Em progresso...',
     thumb: 'captacao.jpeg',
     description:

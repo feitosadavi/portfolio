@@ -117,7 +117,7 @@
     let projectLink  = urlParams.get('projeto');
 
     let project;
-    for(_project of projects) {
+    for(const _project of projects) {
       if (_project.link === projectLink) {
         project = _project;
       }
@@ -127,7 +127,6 @@
     document.getElementById('project-information-title').innerText = project.name;
     
     let projectInformationList = document.getElementById('project-information-list');
-    console.log(project);
     let informations = ['type', 'tools', 'status'];
     for (const information of informations) {
       let title;
